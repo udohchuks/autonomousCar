@@ -6,7 +6,7 @@
     <let name="urdf_file" value="$(find-pkg-share robot_sim)/urdf/robot_sim.urdf.xacro"/>
     <let name="rviz_config" value="$(find-pkg-share robot_sim)/config/robot_sim.rviz"/>
     <let name="gz_bridge" value="$(find-pkg-share robot_sim)/config/gazebo_bridge.yaml"/>
-    <let name="world_file" value="/home/josh/autonomousCar_ws/src/world/ionic_world/ionic.sdf"/>
+    <let name="world_file" value="$(find-pkg-share robot_sim)/world/ionic_world/ionic.sdf"/>
 
     <node pkg="robot_state_publisher" exec="robot_state_publisher">
         <param name="robot_description" value="$(command 'xacro $(var urdf_file)')"/>
