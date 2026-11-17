@@ -1,0 +1,15 @@
+<library path="arduino_diff_drive_hardware">    
+    <class name="arduino_diff_drive/ArduinoDiffDrive" 
+           type="arduino_diff_drive::ArduinoDiffDrive"
+           base_class_type="hardware_interface::SystemInterface">
+           <description>
+                Arduino differential drive hardware interface
+           </description>
+    </class>
+</library>
+
+
+<!--
+The library path is use as target name in CMakeList
+The class name is use as the name of the plugin
+-->
